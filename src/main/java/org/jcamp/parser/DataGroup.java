@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.parser;
 
 import org.jcamp.spectrum.Multiplicity;
@@ -187,7 +194,7 @@ public class DataGroup {
      * gets value for symbol c
      * 
      * @return Object
-     * @param c java.lang.String
+     * @param c String
      */
     public Object getValue(String c) throws JCAMPException {
         return values[indexOfSymbol(c)];
@@ -196,7 +203,7 @@ public class DataGroup {
      * gets index of variable symbol.
      * 
      * @return int
-     * @param symbol java.lang.String
+     * @param symbol String
      */
     public int indexOfSymbol(String symbol) throws JCAMPException {
         for (int i = 0; i < varSymbols.length; i++) {

@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.parser;
 
 /**
@@ -49,7 +56,7 @@ public AFFNGroup(double x, double y, double w) {
 /**
  * return variable symbols.
  * 
- * @return java.lang.String[]
+ * @return String[]
  */
 public final String[] getSymbols() {
 	return varSymbols;
@@ -75,7 +82,7 @@ public double getValue(int index) {
  * gets value for symbol c
  * 
  * @return double
- * @param c java.lang.String
+ * @param c String
  */
 public double getValue(String c) throws JCAMPException {
 	return values[indexOfSymbol(c)];
@@ -84,7 +91,7 @@ public double getValue(String c) throws JCAMPException {
  * gets index of variable symbol.
  * 
  * @return int
- * @param symbol java.lang.String
+ * @param symbol String
  */
 public int indexOfSymbol(String symbol) throws JCAMPException {
 	for (int i = 0; i < varSymbols.length; i++) {

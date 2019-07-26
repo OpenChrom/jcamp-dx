@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.parser;
 
 import java.io.Serializable;
@@ -107,7 +114,7 @@ public class JCAMPVariable
   /**
    * 
    * 
-   * @param symbol java.lang.String
+   * @param symbol String
    */
   JCAMPVariable(String symbol) {
     setSymbol(symbol);
@@ -147,9 +154,9 @@ public class JCAMPVariable
   /**
    * gets variable label.
    * 
-   * @return java.lang.String
+   * @return String
    */
-  public java.lang.String getLabel() {
+  public String getLabel() {
     return label;
   }
   /**
@@ -179,17 +186,17 @@ public class JCAMPVariable
   /**
    * gets normalized variable name.
    * 
-   * @return java.lang.String
+   * @return String
    */
-  public java.lang.String getName() {
+  public String getName() {
     return name;
   }
   /**
    * gets the variable symbol.
    * 
-   * @return java.lang.String
+   * @return String
    */
-  public java.lang.String getSymbol() {
+  public String getSymbol() {
     return symbol;
   }
   /**
@@ -267,9 +274,9 @@ public class JCAMPVariable
   /**
    * sets axis label.
    * 
-   * @param newLabel java.lang.String
+   * @param newLabel String
    */
-  void setLabel(java.lang.String newLabel) {
+  void setLabel(String newLabel) {
     label = newLabel;
   }
   /**
@@ -323,17 +330,17 @@ public class JCAMPVariable
   /**
    * Insert the method's description here.
    * 
-   * @param newName java.lang.String
+   * @param newName String
    */
-  void setName(java.lang.String newName) {
+  void setName(String newName) {
     name = newName;
   }
   /**
    * sets the variable symbol.
    * 
-   * @param newSymbol java.lang.String
+   * @param newSymbol String
    */
-  void setSymbol(java.lang.String newSymbol) {
+  void setSymbol(String newSymbol) {
     symbol = newSymbol.toUpperCase();
   }
   /**
@@ -347,7 +354,7 @@ public class JCAMPVariable
   /**
    * sets the variable's unit.
    * 
-   * @param newUnit java.lang.String
+   * @param newUnit String
    */
   void setUnit(Unit newUnit) {
     unit = newUnit;
@@ -355,15 +362,15 @@ public class JCAMPVariable
   /**
    * sets the variable's unit.
    * 
-   * @param newUnit java.lang.String
+   * @param newUnit String
    */
-  void setUnit(java.lang.String newUnit) {
+  void setUnit(String newUnit) {
     unit = Unit.getUnitFromString(newUnit);
   }
   /**
    * pretty print variable.
    * 
-   * @return java.lang.String
+   * @return String
    */
   @Override
   public String toString() {

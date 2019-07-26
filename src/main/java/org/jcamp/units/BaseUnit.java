@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.units;
 
 /**
@@ -104,7 +111,7 @@ public final class BaseUnit
 
   /**
    * BaseUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   protected BaseUnit(String quantity, String name, String symbol) {
     super(symbol, name);
@@ -175,7 +182,7 @@ public final class BaseUnit
    * @return String
    */
   @Override
-  public java.lang.String getQuantity() {
+  public String getQuantity() {
     return quantity;
   }
   /**

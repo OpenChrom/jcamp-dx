@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.units;
 
 /**
@@ -34,7 +41,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(BaseUnit unit, double factor, String name, String symbol) {
     this((Unit) unit, new UnitScale(factor), name, symbol);
@@ -42,7 +49,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(BaseUnit unit, SIUnitScale factor) {
     this((Unit) unit, factor);
@@ -50,7 +57,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(BaseUnit unit, UnitScale factor, String name, String symbol) {
     this((Unit) unit, factor, name, symbol);
@@ -58,7 +65,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(DerivedUnit unit, double factor, String name, String symbol) {
     this((Unit) unit, new UnitScale(factor), name, symbol);
@@ -66,7 +73,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(DerivedUnit unit, SIUnitScale factor) {
     this((Unit) unit, factor);
@@ -74,7 +81,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(DerivedUnit unit, UnitScale factor, String name, String symbol) {
     this((Unit) unit, factor, name, symbol);
@@ -82,7 +89,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   public ScaledUnit(DimensionlessUnit unit, double factor, String name, String symbol) {
     this((Unit) unit, new UnitScale(factor), name, symbol);
@@ -90,7 +97,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   ScaledUnit(Unit unit, SIUnitScale factor) {
     super(makeName(unit, factor), makeSymbol(unit, factor));
@@ -102,7 +109,7 @@ public final class ScaledUnit
 
   /**
    * ScaledUnit constructor comment.
-   * @param identifier java.lang.String
+   * @param identifier String
    */
   ScaledUnit(Unit unit, UnitScale factor, String name, String symbol) {
     super(symbol, name);
@@ -164,7 +171,7 @@ public final class ScaledUnit
    * @return String
    */
   @Override
-  public java.lang.String getQuantity() {
+  public String getQuantity() {
     return unit.getQuantity();
   }
 
@@ -217,7 +224,7 @@ public final class ScaledUnit
   /**
    * Insert the method's description here.
    * Creation date: (01/14/00 14:54:38)
-   * @return java.lang.String
+   * @return String
    * @param unit com.labcontrol.graphics.data.Unit
    * @param scale com.labcontrol.graphics.data.UnitScale
    */

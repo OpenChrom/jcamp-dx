@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.parser;
 
 import java.util.Enumeration;
@@ -81,7 +88,7 @@ public class LineTokenizer implements Enumeration {
     /**
      * returns the next line.
      * 
-     * @return java.lang.String
+     * @return String
      */
     public Object nextElement() {
         return nextLine();
@@ -89,7 +96,7 @@ public class LineTokenizer implements Enumeration {
     /**
      * returns the next line.
      * 
-     * @return java.lang.String
+     * @return String
      */
     public String nextLine() {
         int p;
@@ -137,7 +144,7 @@ public class LineTokenizer implements Enumeration {
     /**
      * returns the next line.
      * 
-     * @return java.lang.String
+     * @return String
      */
     public String nextToken() {
         return nextLine();

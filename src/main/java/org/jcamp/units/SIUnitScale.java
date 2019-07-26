@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.units;
 
 /**
@@ -48,8 +55,8 @@ public final class SIUnitScale
   /**
    * SIUnitScale constructor comment.
    * @param factor double
-   * @param name java.lang.String
-   * @param prefix java.lang.String
+   * @param name String
+   * @param prefix String
    */
   private SIUnitScale(double factor, String name, String prefix) {
     super(factor, name, prefix);

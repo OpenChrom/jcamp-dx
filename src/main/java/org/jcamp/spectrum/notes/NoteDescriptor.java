@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.spectrum.notes;
 
 import java.io.Serializable;
@@ -30,10 +37,10 @@ public class NoteDescriptor
   private Unit fieldUnit = null;
   private boolean fieldUnique = true;
   private boolean fieldDefault = false;
-  private java.lang.String fieldName = new String();
-  private java.lang.String fieldKey = new String();
+  private String fieldName = new String();
+  private String fieldKey = new String();
   private static Hashtable notesDescriptors = new Hashtable();
-  private java.lang.String fieldParentKey = null;
+  private String fieldParentKey = null;
   private int fieldDeniedMask = 0;
   private int fieldAllowedMask = -1;
   public static NoteDescriptor TITLE;
@@ -49,7 +56,7 @@ public class NoteDescriptor
   /**
    * default ctor;
    * 
-   * @param name java.lang.String
+   * @param name String
    */
   public NoteDescriptor(String key) {
     this(key, key);
@@ -57,7 +64,7 @@ public class NoteDescriptor
   /**
    * default ctor;
    * 
-   * @param name java.lang.String
+   * @param name String
    */
   public NoteDescriptor(String key, String name) {
     this(key, name, false);
@@ -65,7 +72,7 @@ public class NoteDescriptor
   /**
    * ctor for predefined Notes
    * 
-   * @param name java.lang.String
+   * @param name String
    */
   private NoteDescriptor(String key, String name, Class noteClass, boolean isUnique, boolean isDefault) {
     setKey(key);
@@ -111,7 +118,7 @@ public class NoteDescriptor
   /**
    * create mask of spectrum types for this note.
    * @return int
-   * @param maskStr java.lang.String
+   * @param maskStr String
    */
   private static int createSpectrumMask(String maskStr) {
     int mask = 0;
@@ -163,7 +170,7 @@ public class NoteDescriptor
    * accessor method to hashtable.
    * 
    * @return com.creon.chem.spectrum.NoteDescriptor
-   * @param key java.lang.String
+   * @param key String
    */
   public static NoteDescriptor findByKey(String key) {
     return (NoteDescriptor) notesDescriptors.get(key);
@@ -187,19 +194,19 @@ public class NoteDescriptor
     return fieldDeniedMask;
   }
   /**
-   * Gets the key property (java.lang.String) value.
+   * Gets the key property (String) value.
    * @return The key property value.
    * @see #setKey
    */
-  public java.lang.String getKey() {
+  public String getKey() {
     return fieldKey;
   }
   /**
-   * Gets the name property (java.lang.String) value.
+   * Gets the name property (String) value.
    * @return The name property value.
    * @see #setName
    */
-  public java.lang.String getName() {
+  public String getName() {
     return fieldName;
   }
   /**
@@ -219,11 +226,11 @@ public class NoteDescriptor
     return fieldNoteContentParser;
   }
   /**
-   * Gets the parentKey property (java.lang.String) value.
+   * Gets the parentKey property (String) value.
    * @return The parentKey property value.
    * @see #setParentKey
    */
-  public java.lang.String getParentKey() {
+  public String getParentKey() {
     return fieldParentKey;
   }
   /**
@@ -405,19 +412,19 @@ public class NoteDescriptor
     fieldDeniedMask = spectrumMask;
   }
   /**
-   * Sets the key property (java.lang.String) value.
+   * Sets the key property (String) value.
    * @param key The new value for the property.
    * @see #getKey
    */
-  public void setKey(java.lang.String key) {
+  public void setKey(String key) {
     fieldKey = key;
   }
   /**
-   * Sets the name property (java.lang.String) value.
+   * Sets the name property (String) value.
    * @param name The new value for the property.
    * @see #getName
    */
-  public void setName(java.lang.String name) {
+  public void setName(String name) {
     fieldName = name;
   }
   /**
@@ -437,11 +444,11 @@ public class NoteDescriptor
     fieldNoteContentParser = parser;
   }
   /**
-   * Sets the parentKey property (java.lang.String) value.
+   * Sets the parentKey property (String) value.
    * @param parentKey The new value for the property.
    * @see #getParentKey
    */
-  public void setParentKey(java.lang.String parentKey) {
+  public void setParentKey(String parentKey) {
     fieldParentKey = parentKey;
   }
   /**
@@ -463,7 +470,7 @@ public class NoteDescriptor
   /**
    * string display.
    * 
-   * @return java.lang.String
+   * @return String
    */
   @Override
   public String toString() {

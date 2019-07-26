@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.spectrum;
 
 import org.jcamp.math.DataException;
@@ -221,9 +228,9 @@ public class OrderedArrayData
   /**
    * gets data label
    * 
-   * @return java.lang.String
+   * @return String
    */
-  public java.lang.String getLabel() {
+  public String getLabel() {
     if (label == null)
       return unit.toString();
     return label;
@@ -282,9 +289,9 @@ public class OrderedArrayData
   /**
    * Insert the method's description here.
    * 
-   * @param newLabel java.lang.String
+   * @param newLabel String
    */
-  public void setLabel(java.lang.String newLabel) {
+  public void setLabel(String newLabel) {
     label = newLabel;
   }
   /**

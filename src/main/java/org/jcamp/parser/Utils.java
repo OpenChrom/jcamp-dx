@@ -1,3 +1,10 @@
+/*******************************************************************************
+ * Copyright (c) 2015.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v2.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ ******************************************************************************/
 package org.jcamp.parser;
 
 import java.util.ArrayList;
@@ -11,8 +18,8 @@ public class Utils {
   
   /**
    * remove JCAMP line comments from String <code>text</code>
-   * @return java.lang.String
-   * @param text java.lang.String
+   * @return String
+   * @param text String
    */
   public static String extractComments(String text) {
     StringBuilder tmp = new StringBuilder();
@@ -70,8 +77,8 @@ public class Utils {
   /**
    * change all whitespace chars to ' ', collapsing more than one ws into one.
    * 
-   * @return java.lang.String
-   * @param orig java.lang.String
+   * @return String
+   * @param orig String
    */
   public static String normalizeWhitespace(String orig) {
     StringBuilder normal = new StringBuilder();
@@ -90,8 +97,8 @@ public class Utils {
   }
   /**
    * remove JCAMP line comments from String <code>text</code>
-   * @return java.lang.String
-   * @param text java.lang.String
+   * @return String
+   * @param text String
    */
   public static String removeComments(String text) {
     StringBuilder tmp = new StringBuilder();
