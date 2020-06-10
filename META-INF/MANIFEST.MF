@@ -1,4 +1,5 @@
 Manifest-Version: 1.0
+Automatic-Module-Name: jcamp-dx
 Bundle-ManifestVersion: 2
 Bundle-Name: jcamp-dx
 Bundle-SymbolicName: jcamp-dx
